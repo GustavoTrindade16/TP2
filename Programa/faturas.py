@@ -31,3 +31,10 @@ def cria_nova_fatura(lista_de_clientes, lista_de_veiculos):
               "data": date.today()}
 
     return fatura
+
+def imprime_lista_de_faturas(lista_de_faturas):
+    """TODO: documentação"""
+
+    # TODO: Implementar esta função
+    # ...
+    pass
