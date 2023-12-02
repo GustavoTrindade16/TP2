@@ -38,4 +38,10 @@ def imprime_lista(cabecalho, lista):
 
         print(tabulate(lista_a_imprimir, headers="firstrow", tablefmt='psql'))
 
+    def pause():
+        """Faz uma pausa no programa e espera que o utilizador pressione ENTER"""
+
+        input("Pressione ENTER para continuar...")
+
+    
 
