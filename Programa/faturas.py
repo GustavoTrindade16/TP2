@@ -6,17 +6,16 @@ nome_ficheiro_lista_de_faturas = "lista_de_faturas.pk"
 
 
 def cria_nova_fatura(lista_de_clientes, lista_de_veiculos):
-    """Cria uma nova fatura solicitando os dados ao usuário.
+        #Creates a new invoice requesting data from the user.
 
-    Esta função interage com o usuário para obter informações sobre uma nova fatura,
-    como o ID do cliente, o ID do veículo e a data da fatura. Retorna um dicionário
-    contendo esses dados.
+    #This function interacts with the user to obtain information about a new invoice,
+    #such as customer ID, vehicle ID and invoice date. Returns a dictionary
+    #containing this data.
 
-    :param lista_de_clientes: Lista de clientes disponíveis para seleção.
-    :param lista_de_veiculos: Lista de veículos disponíveis para seleção.
-    :return: Dicionário com os dados da nova fatura.
-             Exemplo: {"cliente": <<id_cliente>>, "veiculo": <<id_veiculo>>, "data": <<data>>, ...}
-    """
+    #:param client_list: List of clients available for selection.
+    #:param vehicle_list: List of vehicles available for selection.
+    #:return: Dictionary with the new invoice data.
+    #Example: {"customer": <<client_id>>, "vehicle": <<vehicle_id>>, "data": <<date>>, ...}
     
 
     id_cliente = pergunta_id(questao="Qual o id do cliente?", lista=lista_de_clientes, mostra_lista=True)
@@ -29,17 +28,16 @@ def cria_nova_fatura(lista_de_clientes, lista_de_veiculos):
     return nova_fatura
 
 def imprime_lista_de_faturas(lista_de_faturas):
-    """Imprime a lista de faturas formatadamente.
+    #Prints the list of invoices formatted.
 
-    Esta função recebe uma lista de faturas e imprime seus dados de maneira formatada
-    no terminal.
+    #This function receives a list of invoices and prints their data in a formatted format.
+    #at the terminal.
 
-    :param lista_de_faturas: Lista de faturas a ser impressa.
-                            Cada fatura é representada como um dicionário.
-                            Exemplo: [{"cliente": <<id_cliente>>, "veiculo": <<id_veiculo>>, "data": <<data>>, ...}, {...}, ...]
-    """
-    # TODO: Implementar esta função
-    # ...
+   # :param invoice_list: List of invoices to be printed.
+        #                    Each invoice is represented as a dictionary.
+                  #          Example: [{"customer": <<client_id>>, "vehicle": <<vehicle_id>>, "data": <<date>>, ...}, {...}, ...]
+    
+   
 
 # Exemplo de uso:
 # lista_de_faturas = [...]  # Substitua isso com sua própria lista de faturas

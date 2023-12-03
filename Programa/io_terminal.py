@@ -1,19 +1,13 @@
 from tabulate import tabulate
 
-# TODO: Copie para aqui o código de cada uma das funções nos
-# ficheiros com o nome io_terminal*.py e faça um commit de cada vez
-# Quando este ficheiro estiver completo com todas as suas funções,
-# deve ser o único ficheiro io_terminal.py existente, deve apagar
-# todos os outros ficheiros io_terminal-*.py, e inclusive estes comentários
 
-# ...
 
 def imprime_lista(cabecalho, lista):
-    """Imprime uma lista de dicionários formatadamente em uma tabela.
+    #Prints a list of dictionaries formatted in a table.
 
-    :param cabecalho: Texto do cabeçalho da tabela.
-    :param lista: Lista de dicionários a ser impressa.
-    """
+    #:param header: Table header text.
+   # :param list: List of dictionaries to be printed.
+    
     print(cabecalho)
 
     if len(lista) == 0:
@@ -27,17 +21,17 @@ def imprime_lista(cabecalho, lista):
         print(tabulate(lista_a_imprimir, headers="firstrow", tablefmt='psql'))
 
 def pause():
-    """Pausa a execução e espera pela entrada do usuário (pressionar Enter)."""
+    #Pauses execution and waits for user input (press Enter)."""
     input("Pressione ENTER para continuar...")
 
 def pergunta_id(questao, lista, mostra_lista=False):
-    """Pergunta ao usuário por um ID com base em uma lista.
+    #Asks the user for an ID based on a list.
 
-    :param questao: Texto da pergunta.
-    :param lista: Lista de itens para escolher.
-    :param mostra_lista: Se True, mostra a lista antes de pedir o ID.
-    :return: ID escolhido pelo usuário.
-    """
+    #:param question: Text of the question.
+    #:param list: List of items to choose from.
+    #:param show_list: If True, show the list before asking for the ID.
+    #:return: ID chosen by the user.
+    
     if mostra_lista:
         imprime_lista(cabecalho="", lista=lista)
 

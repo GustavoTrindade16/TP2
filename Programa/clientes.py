@@ -3,33 +3,31 @@ from io_terminal import imprime_lista
 nome_ficheiro_lista_de_clientes = "lista_de_clientes.pk"
 
 def cria_novo_cliente():
-    """Cria um novo cliente solicitando seus dados.
+    #Creates a new customer requesting their data.
 
-    Esta função interage com o usuário para coletar informações sobre um novo cliente,
-    como nome, NIF, etc., e retorna um dicionário contendo esses dados.
+   # This function interacts with the user to collect information about a new customer,
+   # such as name, NIF, etc., and returns a dictionary containing this data.
 
-    :return: Dicionário com os dados do novo cliente.
-             Exemplo: {"nome": "João", "nif": "123456789", ...}
-    """
+   # :return: Dictionary with new customer data.
+         #    Example: {"name": "John", "nif": "123456789", ...}
+    
     # TODO: Pedir os dados do cliente e não esquecer de devolvê-los
     # ...
 
     pass
 
 def imprime_lista_de_clientes(lista_de_clientes):
-    """Imprime a lista de clientes formatadamente.
+    #Prints the customer list formatted.
 
-    Esta função recebe uma lista de clientes e imprime seus dados de maneira formatada
-    no terminal.
+    #This function receives a list of customers and prints their data in a formatted way
+    #at the terminal.
 
-    :param lista_de_clientes: Lista de clientes a ser impressa.
-                              Cada cliente é representado como um dicionário.
-                              Exemplo: [{"nome": "João", "nif": "123456789", ...}, {...}, ...]
-    """
-    # TODO: Implementar esta função
-    # ...
+    #:param client_list: List of clients to be printed.
+                    #          Each customer is represented as a dictionary.
+              #                Example: [{"name": "John", "nif": "123456789", ...}, {...}, ...]
+    
+    
 
-# Exemplo de uso:
-# lista_de_clientes = [...]  # Substitua isso com sua própria lista de clientes
-# imprime_lista_de_clientes(lista_de_clientes)
-
+# Example of use:
+# customer_list = [...] # Replace this with your own customer list
+# print_client_list(client_list)
