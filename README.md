@@ -1,65 +1,65 @@
 # README
 
-Este README documenta as etapas necessárias para colocar seu aplicativo em funcionamento.
+This README documents the steps required to get your app up and running.
 
-### Para que serve este repositório?
+### What is this repository for?
 
-* Resumo rápido...
-* Versão...
-* [Sintaxe básica de gravação e formatação no GitHub](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+* Quick summary...
+* Version...
+* [Basic writing and formatting syntax on GitHub](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
-### Como faço para configurar?
+### How do I configure?
 
-* Resumo da configuração...
-* Configuração...
-* Dependências
+* Configuration summary...
+* Settings...
+* Dependencies
 
-    Para criar um ambiente virtual
+    To create a virtual environment
 
     ```
     $ python -m venv .venv
 	```
 	
-	Depois, é necessário ativar o ambiente virtual
+	Then, you need to activate the virtual environment
 	
 	```
     $ .venv\Scripts\activate
     ```
 
-    e depois instalar as livrarias necessárias
+    and then install the necessary bookstores
 
     ```
     $ pip install -r requirements.txt
     ```
 
-* Configuração de banco de dados...
-* Como fazer testes...
-* Instruções de implantação...
+* Database configuration...
+* How to do tests...
+* Deployment instructions...
 
-#### Documentação
+#### Documentation
 
-Para gerar a configuração para o sphinx, crie uma pasta com o nome `doc`, e mude para essa pasta
+To generate the configuration for sphinx, create a folder with the name `doc`, and change to that folder
 
 ```
 $ mkdir doc
 $ cd doc
 ```
 
-e depois escreva o comando abaixo, alterando o nome do(s) autor(es), e o nome da aplicação:
+and then write the command below, changing the name of the author(s) and the name of the application:
 
 ```
 $ sphinx-apidoc -F -f -A "nome do autor" -V 0 -R 0.1 -H "nome da aplicação" -e -P -a --ext-autodoc --ext-viewcode --ext-todo -o . ./../src/
 ```
 
-Posteriormente deve configurar o ficheiro `doc\config.py` com as alterações que entenda necessárias
+Afterwards, you must configure the `doc\config.py` file with the changes you deem necessary
 
-### Diretrizes de contribuição
+### Contribution Guidelines
 
-* Testes de escrita...
-* Revisão de código...
-* Outras diretrizes...
+* Writing tests...
+* Code review...
+* Other guidelines...
 
-### Com quem devo falar?
+### Who should I talk to?
 
-* Proprietário ou administrador do repo...
-* Outro contato da comunidade ou equipe...
+* Repository owner or administrator...
+* Another community contact or team...
